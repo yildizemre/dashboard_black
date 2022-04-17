@@ -103,11 +103,6 @@ def eventPost():
 
     }
 
-
-
-
-
-
     with open("./static/assets/popup/data.json", 'w') as file:
         file.write("""
         {
@@ -131,10 +126,7 @@ def eventPost():
      
      
     ]
-  }
-
-  
-        
+  }  
         """)
    
     
@@ -845,15 +837,10 @@ def page_not_found(error):
 def page_not_found(error):
     return render_template('./pages/samples/error-404.html'), 404
 
-
-
-
-
-    return decorated_function
 if __name__ == '__main__':
     scheduler.add_job(id = 'Scheduled Task', func=scheduleTask, trigger="interval", minutes=0.01)
     scheduler.start()
 
     # run() method of Flask class runs the application
     # on the local development server.
-    app.run()
+    app.run(host='192.168.1.40',port='5000')
