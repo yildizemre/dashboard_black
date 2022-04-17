@@ -1,0 +1,52 @@
+{
+    "hype_module_list": "Super hero squad",
+    "activity": "Factory",
+    "design_date": 2020,
+    "secret_key": "coKhjsPmTtSejyHqOjo64grxzgBnQzJd",
+    "active": true,
+    "module_list": [
+      {
+        "name": "HeatMap Anaylsis",
+        "fps_count": 9,
+        
+        "powers": [
+          "Baret",
+          "Yelek"
+          
+        ]
+      },
+      {
+        "name": "Number Of Customers Entering The Bank",
+        "fps_count": 9,
+        
+        "powers": [
+          "Million tonne punch"
+          
+        ]
+      },
+      {
+        "name": "Customer Analysis",
+        "fps_count": 9,
+        
+        "powers": [
+          "Unknown"
+        
+        ]
+      },   {
+        "name": "Customer Time Analysis",
+        "fps_count": 9,
+        
+        "powers": [
+          "Unknown"
+        
+        ]
+      }
+
+
+
+      
+
+    ]
+  }
+
+  

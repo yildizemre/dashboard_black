@@ -1,0 +1,22 @@
+{
+    "hype_module_list": "Super Hero Emre YILDIZ",
+    "activity": "Factory",
+    "design_date": 2020,
+    "secret_key": "coKhjsPmTtSejyHqOjo64grxzgBnQzJd",
+    "active": true,
+    "header_list": [
+      {
+        "gunluk_musteri": 12,
+        "banka_icerisindeki_musteri_sayisi": 3,
+        "gise_musteri_sayisi" : 5,
+        "bekleyen_musteri_sayisi":10
+        
+        
+      }
+    
+     
+     
+    ]
+  }
+
+  

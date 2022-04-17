@@ -1,0 +1,41 @@
+{
+    "hype_information_list": "CEO-EMRE",
+    "activity": "Factory",
+    "design_date": 2020,
+    "secret_key": "coKhjsPmTtSejyHqOjo64grxzgBnQzJd",
+    "active": true,
+    "information_list": [
+      {
+        "file_name": "Engelli Calisanlar Icin Is Sagligi ve Guvenligi Rehberi",
+        "file_path": "./static/assets/information_files/Engelli_Calisanlar_Icin_Is_Sagligi_ve_Guvenligi_Rehberi_20170725_103143.pdf"
+        
+      },
+      {
+        "file_name": "Psi̇kososyal Ri̇sk Faktörleri̇ Bi̇lgi̇lendi̇rme Rehberi̇",
+        "file_path": "./static/assets/information_files/Psikososyal_Risk_Faktorleri_Bilgilendirme_Rehberi_20170725_104520.pdf"
+        
+      },
+      {
+        "file_name": "Sağlikli Yaşam Rehberi̇",
+        "file_path": "./static/assets/information_files/Saglikli_Yasam_Rehberi_20170725_104700.pdf"
+        
+      },
+      {
+        "file_name": "Meslek Hastaliklari Bi̇ldi̇ri̇m Rehberi̇",
+        "file_path": "./static/assets/information_files/Meslek_Hastaliklari_Bildirim_Rehberi_20170725_104132.pdf"
+        
+      },
+      {
+        "file_name": "Ofi̇slerde İş Sağliği Ve Güvenli̇ği̇",
+        "file_path": "./static/assets/information_files/ISGUM_Ofislerde_Is_Sagligi_ve_Guvenligi_20170724_163401.pdf"
+        
+      },
+      {
+        "file_name": "İş Sağlığı ve Güvenliği Fayda-Maliyet Analizi Proje Raporu ",
+        "file_path": "./static/assets/information_files/Is_Sagligi_ve_Guvenligi_Fayda_Maliyet_Analizi_Proje_Raporu_20170725_105334.pdf"
+        
+      }
+    ]
+  }
+
+  

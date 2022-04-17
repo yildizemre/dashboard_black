@@ -1,0 +1,43 @@
+{
+    "hype_module_list": "Super Hero Emre YILDIZ",
+    "activity": "Factory",
+    "design_date": 2020,
+    "secret_key": "coKhjsPmTtSejyHqOjo64grxzgBnQzJd",
+    "active": true,
+    "notification_list": [
+      {
+        "name": "Equipment Control",
+        "notification_no": 12123,
+        "Proffer" : "m-101",
+        "image" : "image-101",
+        "cam_no" : "6",
+        "Date":"02.04.2022 17:25",
+        "Status": "Appro"
+        
+      },
+      {
+        "name": "Area Violation",
+        "notification_no": 11974,
+        "Proffer" : "m-102",
+        "image" : "image-102",
+        "cam_no" : "10",
+        "Date":"22.03.2022 17:25",
+        "Status": "Appro"
+        
+      },
+      {
+        "name": "Fire Detection",
+        "notification_no": 19867,
+        "Proffer" : "m-103",
+        "image" : "image-103",
+        "cam_no" : "8",
+        "Date":"02.03.2022 17:25",
+        "Status": "Appro"
+        
+      }
+     
+     
+    ]
+  }
+
+  

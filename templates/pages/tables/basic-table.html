@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Notifications Panel</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="./static/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="./static/assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="./static/assets/css/style.css">
+    <link rel="stylesheet" href="./static/assets/css/main-min.css">
+    
+    <link rel="stylesheet" href="https://rawgit.com/MohammadYounes/AlertifyJS/master/build/css/alertify.min.css"/>
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="./static/assets/images/favicon.png" />
+
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.css">
+
+
+    <style>
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+      
+      .primary-btn {
+        background-image: -moz-linear-gradient(0deg, #235ee7 0%, #4ae7fa 100%);
+        background-image: -webkit-linear-gradient(0deg, #235ee7 0%, #4ae7fa 100%);
+        background-image: -ms-linear-gradient(0deg, #235ee7 0%, #4ae7fa 100%);
+      }
+      
+      .primary-btn {
+        line-height: 36px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 25px;
+        border: none;
+        color: #fff;
+        display: inline-block;
+        font-weight: 500;
+        position: relative;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        text-transform: uppercase;
+        position: relative;
+      }
+      
+      .primary-btn {
+        color: #fff;
+        border: 1px solid #fff;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+      }
+      
+      .primary-btn:hover {
+        background: transparent;
+        color: #235ee7;
+        border-color: #235ee7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="./"><img src="./static/assets/images/logo_or.png" alt="logo" /></a>
+          <a class="sidebar-brand brand-logo-mini" href="./"><img src="./static/assets/images/logo_mini1.png" alt="logo" /></a>
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="./static/assets/images/faces/face15.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">{{session['name_surname']}}</h5>
+                  <span>{{session['title']}}</span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                <a href="./setting" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                  </div>
+                </a>
+               
+                
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Management Panel</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          
+          
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="./notifications">
+              <span class="menu-icon">
+                <i class="mdi mdi-table-large"></i>
+              </span>
+              <span class="menu-title">Tables</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/chart">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-bar"></i>
+              </span>
+              <span class="menu-title">Charts</span>
+            </a>
+          </li>
+           <li class="nav-item menu-items">
+            <a class="nav-link" href="/setting">
+              <span class="menu-icon">
+               <i class="mdi mdi-settings text-primary"></i>
+              </span>
+              <span class="menu-title">Setting</span>
+            </a>
+          </li>
+            <li class="nav-item menu-items">
+            <a class="nav-link" href="/form">
+              <span class="menu-icon">
+                <i class="mdi mdi-text text-text"></i>
+              </span>
+              <span class="menu-title">Form</span>
+            </a>
+          </li>
+          
+         
+          
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="./"><img src="./static/assets/images/logo_mini1.png" alt="logo" /></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            
+            <ul class="navbar-nav navbar-nav-right">
+              
+            
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="./static/assets/images/faces/face15.jpg" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">{{session['name_surname']}}</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a href="./setting" class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title"> Notification Table</h3>
+              <nav aria-label="breadcrumb">
+                
+              </nav>
+            </div>
+            <div class="row">
+            
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Module Notification Analysis</h4>
+
+         
+                    </p>
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th> # </th>
+                            <th> Module name </th>
+                            <th> Progress </th>
+                            <th> Notification Count </th>
+                            <th> Status </th>
+                          </tr>
+                        </thead>
+                        <tbody >
+                         {% for i in range (risk_mana|length) %}
+                          <tr>
+                          
+                            <td> {{i}} </td>
+                            <td> {{risk_mana['index'][i]}} </td>
+                            <td>
+                              <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 55%" aria-valuenow="{{risk_mana['name'][i]}}" aria-valuemin="0" aria-valuemax="1000"></div>
+                              </div>
+                            </td>
+                            <td> {{risk_mana['name'][i]}} </td>
+                            <td>
+                              <div class="badge badge-outline-success">Active</div>
+                            </td>
+
+                            
+                          </tr>
+                          
+                         {%endfor%}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Notifications Table</h4>
+                
+                    </p>
+                    <div class="card-header-title is-right">
+                      <!-- <input id="myInput" class="input" type="input"> -->
+                      <input  name="search" type="input" class="form-control" id="myInput" placeholder="Search Data">
+                      <span class="counter"></span>
+                      
+                    </div>
+                    <div class="table-responsive">
+                      <table  id="data" class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th> Module Name </th>
+                            <th> Notification No </th>
+                            <th> Proffer </th>
+                            <th> Image </th>
+                            <th> Cam No </th>
+                            <th> Date </th>
+                            <th> Status </th>
+                          </tr>
+                        </thead>
+                        <tbody id="myTable">
+
+                        {% for i in range (first_data|length) %}
+                         <tr>
+                            
+                            <td>
+                              <img src="{{first_data['image'][i]}}" alt="image" />
+                              <span class="pl-2">{{first_data['name'][i]}}</span>
+                            </td>
+                            <td> {{first_data['notification_no'][i]}} </td>
+                            
+                           
+                            <td>  <div class="badge badge-outline-success"><a class="dropdown-item preview-item" href="https://www.mevzuat.gov.tr/File/GeneratePdf?mevzuatNo=16924&mevzuatTur=KurumVeKurulusYonetmeligi&mevzuatTertip=5">Offer</a> </div></td>
+
+                           
+                            <!-- <td>  <div class="badge badge-outline-warning"><a class="dropdown-item preview-item" href="{{first_data['image'][i]}}">Image</a> </div></td> -->
+                               <td>  <div class="badge badge-outline-warning"><a data-fancybox="gallery" class="dropdown-item preview-item" href="{{first_data['image'][i]}}">Image</a> </div></td>
+                        
+                               
+                            <td> {{first_data['cam_no'][i]}} </td>
+                            <td> {{first_data['date'][i]}} </td>
+
+
+
+                            
+                            <td>
+                              <div class="badge badge-outline-danger">Detection</div>
+                            </td>
+                          </tr>
+                        {%endfor%}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Inverse table</h4>
+                    <p class="card-description"> Add class <code>.table-dark</code>
+                    </p>
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th> # </th>
+                            <th> First name </th>
+                            <th> Amount </th>
+                            <th> Deadline </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> 1 </td>
+                            <td> Herman Beck </td>
+                            <td> $ 77.99 </td>
+                            <td> May 15, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td> 2 </td>
+                            <td> Messsy Adam </td>
+                            <td> $245.30 </td>
+                            <td> July 1, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td> 3 </td>
+                            <td> John Richards </td>
+                            <td> $138.00 </td>
+                            <td> Apr 12, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td> 4 </td>
+                            <td> Peter Meggik </td>
+                            <td> $ 77.99 </td>
+                            <td> May 15, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td> 5 </td>
+                            <td> Edward </td>
+                            <td> $ 160.25 </td>
+                            <td> May 03, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td> 6 </td>
+                            <td> John Doe </td>
+                            <td> $ 123.21 </td>
+                            <td> April 05, 2015 </td>
+                          </tr>
+                          <tr>
+                            <td> 7 </td>
+                            <td> Henry Tom </td>
+                            <td> $ 150.00 </td>
+                            <td> June 16, 2015 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="col-lg-12 stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Table with contextual classes</h4>
+                    <p class="card-description"> Add class <code>.table-{color}</code>
+                    </p>
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-contextual">
+                        <thead>
+                          <tr>
+                            <th> # </th>
+                            <th> First name </th>
+                            <th> Product </th>
+                            <th> Amount </th>
+                            <th> Deadline </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table-info">
+                            <td> 1 </td>
+                            <td> Herman Beck </td>
+                            <td> Photoshop </td>
+                            <td> $ 77.99 </td>
+                            <td> May 15, 2015 </td>
+                          </tr>
+                          <tr class="table-warning">
+                            <td> 2 </td>
+                            <td> Messsy Adam </td>
+                            <td> Flash </td>
+                            <td> $245.30 </td>
+                            <td> July 1, 2015 </td>
+                          </tr>
+                          <tr class="table-danger">
+                            <td> 3 </td>
+                            <td> John Richards </td>
+                            <td> Premeire </td>
+                            <td> $138.00 </td>
+                            <td> Apr 12, 2015 </td>
+                          </tr>
+                          <tr class="table-success">
+                            <td> 4 </td>
+                            <td> Peter Meggik </td>
+                            <td> After effects </td>
+                            <td> $ 77.99 </td>
+                            <td> May 15, 2015 </td>
+                          </tr>
+                          <tr class="table-primary">
+                            <td> 5 </td>
+                            <td> Edward </td>
+                            <td> Illustrator </td>
+                            <td> $ 160.25 </td>
+                            <td> May 03, 2015 </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © hypegenai.com 2020</span>
+              <!-- <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https:/F/www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span> -->
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="./static/assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="./static/assets/js/off-canvas.js"></script>
+    <script src="./static/assets/js/hoverable-collapse.js"></script>
+    <script src="./static/assets/js/misc.js"></script>
+    <script src="./static/assets/js/settings.js"></script>
+    <script src="./static/assets/js/todolist.js"></script>
+    <script type="text/javascript" src="./static/assets/js/table.js"></script>
+    <script type="text/javascript" src="./static/assets/js/main-min.js"></script>
+
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+   
+    
+   <script >
+    
+  function alert_message() {
+
+    
+
+
+
+
+
+
+    
+    $.ajax({
+      type: "Get",
+      url: "./static/assets/popup/data.json",
+      dataType: "json",
+      success: function(data) {
+
+
+
+        
+        
+        var text1= "Tarih : "+data.notification_list[0]['Date'];
+        var text2 =  "Lokasyon: "+data.notification_list[0]['cam_no'];
+        var text3= "Risk: "+data.notification_list[0]['name'];
+        
+        //alert(JSON.stringify(result.json));
+        //var myWindow = window.open("", "MsgWindow", "width=848, height=480");
+        //myWindow.document.write("<img src='./static/assets/images/faces/face12.jpeg'> This is 'MsgWindow'. I am 200px wide and 100px tall!");
+        //alert(text1+"\n"+text2+"\n"+text3);
+        
+        
+
+      
+        //window.open("http://127.0.0.1:5000/alert", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+        alertify.alert("<h1 style='color: black; font-size: 16px;'>"+text2+" -- "+text1+" -- "+text3+"</h1>",
+    
+        
+       
+        
+                    "<img style='width:100%;' src='./static/assets/images/faces/fire1.png'/>",
+                    )
+         .set({
+             onrestored:function(){ 
+                 alertify.success('BİLDİRİM GÖRÜNTÜLENDİ')
+             },
+             maximizable:true
+         })
+         .maximize();
+
+        
+          
+
+                
+      },
+      
+  });
+
+ 
+  }
+ 
+  
+  </script>
+<script >
+    
+  function remove_ajax() {
+
+
+     
+  $.ajax({
+    url:"{{url_for('remove')}}",
+    type:"POST",
+    data:{"data":"data"},
+    success:function(res){
+      $("#courses").html(res);
+    }
+  });
+
+  }
+
+  </script>
+
+  <script>
+    setInterval(alert_message, 3000);
+    
+  </script>
+  <!-- <script>
+    setInterval(remove_ajax, 3500);
+    
+  </script> -->
+  
+    <script src="https://rawgit.com/MohammadYounes/AlertifyJS/master/build/alertify.min.js"></script>
+  </body>
+</html>

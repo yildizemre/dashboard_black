@@ -1,0 +1,1325 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.delete,
+.modal-close,
+.b-radio.radio,
+.b-checkbox.checkbox,
+.switch,
+.button,
+.file,
+.breadcrumb,
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis,
+.tabs,
+.pagination:not(:last-child),
+.tabs:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 5rem;
+  height: 2.5em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  position: relative;
+  vertical-align: top;
+}
+
+.pagination-previous:focus,
+.pagination-next:focus,
+.pagination-link:focus,
+.pagination-ellipsis:focus,
+
+.is-focused.pagination-previous,
+.is-focused.pagination-next,
+.is-focused.pagination-link,
+.is-focused.pagination-ellipsis,
+
+
+.pagination-previous:active,
+.pagination-next:active,
+.pagination-link:active,
+.pagination-ellipsis:active,
+.pagination-previous[disabled],
+.pagination-next[disabled],
+.pagination-link[disabled],
+.pagination-ellipsis[disabled],
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis,
+
+.pagination:not(:last-child),
+.tabs:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.b-table.has-pagination .table-wrapper {
+  margin-bottom: 0;
+}
+.b-table.has-pagination .table-wrapper + .notification {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis,
+.
+.pagination:not(:last-child),
+
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  position: relative;
+  vertical-align: top;
+}
+.pagination-previous:focus,
+.pagination-next:focus,
+.pagination-link:focus,
+.pagination-ellipsis:focus,
+
+.is-focused.pagination-previous,
+.is-focused.pagination-next,
+.is-focused.pagination-link,
+.is-focused.pagination-ellipsis,
+
+
+.pagination-previous:active,
+.pagination-next:active,
+.pagination-link:active,
+.pagination-ellipsis:active,
+.
+.is-active.pagination-previous,
+.is-active.pagination-next,
+.is-active.pagination-link,
+.is-active.pagination-ellipsis {
+  outline: none;
+}
+.pagination-previous[disabled],
+.pagination-next[disabled],
+.pagination-link[disabled],
+.pagination-ellipsis[disabled],
+
+fieldset[disabled] .pagination-previous,
+fieldset[disabled] .pagination-next,
+fieldset[disabled] .pagination-link,
+fieldset[disabled] .pagination-ellipsis {
+  cursor: not-allowed;
+}
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis,
+.tabs,ld),
+.tabs:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.delete,
+.modal-close {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: rgba(10, 10, 10, 0.2);
+  border: none;
+  border-radius: 290486px;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 0;
+  height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: none;
+  position: relative;
+  vertical-align: top;
+  width: 20px;
+}
+.delete::before,
+.modal-close::before,
+.delete::after,
+.modal-close::after {
+  background-color: #fff;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform-origin: center center;
+}
+.delete::before,
+.modal-close::before {
+  height: 2px;
+  width: 50%;
+}
+.delete::after,
+.modal-close::after {
+  height: 50%;
+  width: 2px;
+}
+.delete:hover,
+.modal-close:hover,
+.delete:focus,
+.modal-close:focus {
+  background-color: rgba(10, 10, 10, 0.3);
+}
+.delete:active,
+.modal-close:active {
+  background-color: rgba(10, 10, 10, 0.4);
+}
+.is-small.delete,
+.is-small.modal-close {
+  height: 16px;
+  max-height: 16px;
+  max-width: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  width: 16px;
+}
+.is-medium.delete,
+.is-medium.modal-close {
+  height: 24px;
+  max-height: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  min-width: 24px;
+  width: 24px;
+}
+.is-large.delete,
+.is-large.modal-close {
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  width: 32px;
+}
+.button.is-loading::after,
+.loader,
+.select.is-loading::after,
+.control.is-loading::after {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em;
+}
+.image.is-square img,
+.image.is-square .has-ratio,
+.image.is-1by1 img,
+.image.is-1by1 .has-ratio,
+.image.is-5by4 img,
+.image.is-5by4 .has-ratio,
+.image.is-4by3 img,
+.image.is-4by3 .has-ratio,
+.image.is-3by2 img,
+.image.is-3by2 .has-ratio,
+.image.is-5by3 img,
+.image.is-5by3 .has-ratio,
+.image.is-16by9 img,
+.image.is-16by9 .has-ratio,
+.image.is-2by1 img,
+.image.is-2by1 .has-ratio,
+.image.is-3by1 img,
+.image.is-3by1 .has-ratio,
+.image.is-4by5 img,
+.image.is-4by5 .has-ratio,
+.image.is-3by4 img,
+.image.is-3by4 .has-ratio,
+.image.is-2by3 img,
+.image.is-2by3 .has-ratio,
+.image.is-3by5 img,
+.image.is-3by5 .has-ratio,
+.image.is-9by16 img,
+.image.is-9by16 .has-ratio,
+.image.is-1by2 img,
+.image.is-1by2 .has-ratio,
+.image.is-1by3 img,
+.image.is-1by3 .has-ratio,
+.modal,
+.modal-background,
+.is-overlay,
+.hero-video {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.button,
+.input,
+.textarea,
+.select select,
+.file-cta,
+.file-name,
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  position: relative;
+  vertical-align: top;
+}
+.button:focus,
+.input:focus,
+.textarea:focus,
+.select select:focus,
+.file-cta:focus,
+.file-name:focus,
+.pagination-previous:focus,
+.pagination-next:focus,
+.pagination-link:focus,
+.pagination-ellipsis:focus,
+.is-focused.button,
+.is-focused.input,
+.is-focused.textarea,
+.select select.is-focused,
+.is-focused.file-cta,
+.is-focused.file-name,
+.is-focused.pagination-previous,
+.is-focused.pagination-next,
+.is-focused.pagination-link,
+.is-focused.pagination-ellipsis,
+.button:active,
+.input:active,
+.textarea:active,
+.select select:active,
+.file-cta:active,
+.file-name:active,
+.pagination-previous:active,
+.pagination-next:active,
+.pagination-link:active,
+.pagination-ellipsis:active,
+.is-active.button,
+.is-active.input,
+.is-active.textarea,
+.select select.is-active,
+.is-active.file-cta,
+.is-active.file-name,
+.is-active.pagination-previous,
+.is-active.pagination-next,
+.is-active.pagination-link,
+.is-active.pagination-ellipsis {
+  outline: none;
+}
+.button[disabled],
+.input[disabled],
+.textarea[disabled],
+.select select[disabled],
+.file-cta[disabled],
+.file-name[disabled],
+.pagination-previous[disabled],
+.pagination-next[disabled],
+.pagination-link[disabled],
+.pagination-ellipsis[disabled],
+fieldset[disabled] .button,
+fieldset[disabled] .input,
+fieldset[disabled] .textarea,
+fieldset[disabled] .select select,
+.select fieldset[disabled] select,
+fieldset[disabled] .file-cta,
+fieldset[disabled] .file-name,
+fieldset[disabled] .pagination-previous,
+fieldset[disabled] .pagination-next,
+fieldset[disabled] .pagination-link,
+fieldset[disabled] .pagination-ellipsis {
+  cursor: not-allowed;
+}
+.switch {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  margin-right: 0.5em;
+}
+.switch + .switch:last-child {
+  margin-right: 0;
+}
+.switch input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  outline: none;
+  z-index: -1;
+}
+.switch input[type="checkbox"] + .check {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 2.75em;
+  height: 1.575em;
+  padding: 0.2em;
+  background: #b5b5b5;
+  border-radius: 4px;
+  transition: background 150ms ease-out, box-shadow 150ms ease-out;
+}
+.switch input[type="checkbox"] + .check.is-white-passive,
+.switch input[type="checkbox"] + .check:hover {
+  background: #fff;
+}
+.switch
+  input[type="checkbox"]
+  + .check.input[type="checkbox"]
+  + .switch
+  input[type="checkbox"]
+  + .check.check {
+  background: "pink";
+}
+.switch input[type="checkbox"] + .check.is-black-passive,
+.switch input[type="checkbox"] + .check:hover {
+  background: #0a0a0a;
+}
+.switch
+  input[type="checkbox"]
+  + .check.input[type="checkbox"]
+  + .switch
+  input[type="checkbox"]
+  + .check.check {
+  background: "pink";
+}
+.switch input[type="checkbox"] + .check.is-light-passive,
+.switch input[type="checkbox"] + .check:hover {
+  background: #f5f5f5;
+}
+.switch
+  input[type="checkbox"]
+  + .check.input[type="checkbox"]
+  + .switch
+  input[type="checkbox"]
+  + .check.check {
+  background: "pink";
+}
+.switch input[type="checkbox"] + .check.is-dark-passive,
+.switch input[type="checkbox"] + .check:hover {
+  background: #363636;
+}
+.switch
+  input[type="checkbox"]
+  + .check.input[type="checkbox"]
+  + .switch
+  input[type="checkbox"]
+  + .check.check {
+  background: "pink";
+}
+.switch input[type="checkbox"] + .check.is-primary-passive,
+.switch input[type="checkbox"] + .check:hover {
+  background: #00d1b2;
+}
+.switch
+  input[type="checkbox"]
+  + .check.input[type="checkbox"]
+  + .switch
+  input[type="checkbox"]
+  + .check.check {
+  background: "pink";
+}
+.switch input[type="checkbox"] + .check.is-link-passive,
+.switch input[type="checkbox"] + .check:hover {
+  background: #3273dc;
+}
+.switch
+  input[type="checkbox"]
+  + .check.input[type="checkbox"]
+  + .switch
+  input[type="checkbox"]
+  + .check.check {
+  background: "pink";
+}
+.switch input[type="checkbox"] + .check.is-info-passive,
+.switch input[type="checkbox"] + .check:hover {
+  background: #3298dc;
+}
+.switch
+  input[type="checkbox"]
+  + .check.input[type="checkbox"]
+  + .switch
+  input[type="checkbox"]
+  + .check.check {
+  background: "pink";
+}
+.switch input[type="checkbox"] + .check.is-success-passive,
+.switch input[type="checkbox"] + .check:hover {
+  background: #48c774;
+}
+.switch
+  input[type="checkbox"]
+  + .check.input[type="checkbox"]
+  + .switch
+  input[type="checkbox"]
+  + .check.check {
+  background: "pink";
+}
+.switch input[type="checkbox"] + .check.is-warning-passive,
+.switch input[type="checkbox"] + .check:hover {
+  background: #ffdd57;
+}
+.switch
+  input[type="checkbox"]
+  + .check.input[type="checkbox"]
+  + .switch
+  input[type="checkbox"]
+  + .check.check {
+  background: "pink";
+}
+.switch input[type="checkbox"] + .check.is-danger-passive,
+.switch input[type="checkbox"] + .check:hover {
+  background: #f14668;
+}
+.switch
+  input[type="checkbox"]
+  + .check.input[type="checkbox"]
+  + .switch
+  input[type="checkbox"]
+  + .check.check {
+  background: "pink";
+}
+.switch input[type="checkbox"] + .check:before {
+  content: "";
+  display: block;
+  border-radius: 4px;
+  width: 1.175em;
+  height: 1.175em;
+  background: #f5f5f5;
+  transition: transform 150ms ease-out;
+  will-change: transform;
+  transform-origin: left;
+}
+.switch input[type="checkbox"] + .check.is-elastic:before {
+  transform: scaleX(1.5);
+  border-radius: 4px;
+}
+.switch input[type="checkbox"]:checked + .check {
+  background: #00d1b2;
+}
+.switch input[type="checkbox"]:checked + .check.is-white {
+  background: #fff;
+}
+.switch input[type="checkbox"]:checked + .check.is-black {
+  background: #0a0a0a;
+}
+.switch input[type="checkbox"]:checked + .check.is-light {
+  background: #f5f5f5;
+}
+.switch input[type="checkbox"]:checked + .check.is-dark {
+  background: #363636;
+}
+.switch input[type="checkbox"]:checked + .check.is-primary {
+  background: #00d1b2;
+}
+.switch input[type="checkbox"]:checked + .check.is-link {
+  background: #3273dc;
+}
+.switch input[type="checkbox"]:checked + .check.is-info {
+  background: #3298dc;
+}
+.switch input[type="checkbox"]:checked + .check.is-success {
+  background: #48c774;
+}
+.switch input[type="checkbox"]:checked + .check.is-warning {
+  background: #ffdd57;
+}
+.switch input[type="checkbox"]:checked + .check.is-danger {
+  background: #f14668;
+}
+.switch input[type="checkbox"]:checked + .check:before {
+  transform: translate3d(100%, 0, 0);
+}
+.switch input[type="checkbox"]:checked + .check.is-elastic:before {
+  transform: translate3d(50%, 0, 0) scaleX(1.5);
+}
+.switch input[type="checkbox"]:focus,
+.switch input[type="checkbox"]:active {
+  outline: none;
+}
+.switch .control-label {
+  padding-left: 0.5em;
+}
+.switch:hover input[type="checkbox"] + .check {
+  background: rgba(181, 181, 181, 0.9);
+}
+.switch:hover input[type="checkbox"] + .check.is-white-passive {
+  background: rgba(255, 255, 255, 0.9);
+}
+.switch:hover input[type="checkbox"] + .check.is-black-passive {
+  background: rgba(10, 10, 10, 0.9);
+}
+.switch:hover input[type="checkbox"] + .check.is-light-passive {
+  background: rgba(245, 245, 245, 0.9);
+}
+.switch:hover input[type="checkbox"] + .check.is-dark-passive {
+  background: rgba(54, 54, 54, 0.9);
+}
+.switch:hover input[type="checkbox"] + .check.is-primary-passive {
+  background: rgba(0, 209, 178, 0.9);
+}
+.switch:hover input[type="checkbox"] + .check.is-link-passive {
+  background: rgba(50, 115, 220, 0.9);
+}
+.switch:hover input[type="checkbox"] + .check.is-info-passive {
+  background: rgba(50, 152, 220, 0.9);
+}
+.switch:hover input[type="checkbox"] + .check.is-success-passive {
+  background: rgba(72, 199, 116, 0.9);
+}
+.switch:hover input[type="checkbox"] + .check.is-warning-passive {
+  background: rgba(255, 221, 87, 0.9);
+}
+.switch:hover input[type="checkbox"] + .check.is-danger-passive {
+  background: rgba(241, 70, 104, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check {
+  background: rgba(0, 209, 178, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check.is-white {
+  background: rgba(255, 255, 255, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check.is-black {
+  background: rgba(10, 10, 10, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check.is-light {
+  background: rgba(245, 245, 245, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check.is-dark {
+  background: rgba(54, 54, 54, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check.is-primary {
+  background: rgba(0, 209, 178, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check.is-link {
+  background: rgba(50, 115, 220, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check.is-info {
+  background: rgba(50, 152, 220, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check.is-success {
+  background: rgba(72, 199, 116, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check.is-warning {
+  background: rgba(255, 221, 87, 0.9);
+}
+.switch:hover input[type="checkbox"]:checked + .check.is-danger {
+  background: rgba(241, 70, 104, 0.9);
+}
+.switch.is-rounded input[type="checkbox"] + .check {
+  border-radius: 290486px;
+}
+.switch.is-rounded input[type="checkbox"] + .check:before {
+  border-radius: 290486px;
+}
+.switch.is-rounded input[type="checkbox"].is-elastic:before {
+  transform: scaleX(1.5);
+  border-radius: 290486px;
+}
+.switch.is-outlined input[type="checkbox"] + .check {
+  background: transparent;
+  border: 0.1rem solid #b5b5b5;
+  padding: 0.1em;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-white-passive {
+  border: 0.1rem solid rgba(255, 255, 255, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-white-passive:before {
+  background: #fff;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-white-passive:hover {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-black-passive {
+  border: 0.1rem solid rgba(10, 10, 10, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-black-passive:before {
+  background: #0a0a0a;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-black-passive:hover {
+  border-color: rgba(10, 10, 10, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-light-passive {
+  border: 0.1rem solid rgba(245, 245, 245, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-light-passive:before {
+  background: #f5f5f5;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-light-passive:hover {
+  border-color: rgba(245, 245, 245, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-dark-passive {
+  border: 0.1rem solid rgba(54, 54, 54, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-dark-passive:before {
+  background: #363636;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-dark-passive:hover {
+  border-color: rgba(54, 54, 54, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-primary-passive {
+  border: 0.1rem solid rgba(0, 209, 178, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-primary-passive:before {
+  background: #00d1b2;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-primary-passive:hover {
+  border-color: rgba(0, 209, 178, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-link-passive {
+  border: 0.1rem solid rgba(50, 115, 220, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-link-passive:before {
+  background: #3273dc;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-link-passive:hover {
+  border-color: rgba(50, 115, 220, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-info-passive {
+  border: 0.1rem solid rgba(50, 152, 220, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-info-passive:before {
+  background: #3298dc;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-info-passive:hover {
+  border-color: rgba(50, 152, 220, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-success-passive {
+  border: 0.1rem solid rgba(72, 199, 116, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-success-passive:before {
+  background: #48c774;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-success-passive:hover {
+  border-color: rgba(72, 199, 116, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-warning-passive {
+  border: 0.1rem solid rgba(255, 221, 87, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-warning-passive:before {
+  background: #ffdd57;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-warning-passive:hover {
+  border-color: rgba(255, 221, 87, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-danger-passive {
+  border: 0.1rem solid rgba(241, 70, 104, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-danger-passive:before {
+  background: #f14668;
+}
+.switch.is-outlined input[type="checkbox"] + .check.is-danger-passive:hover {
+  border-color: rgba(241, 70, 104, 0.9);
+}
+.switch.is-outlined input[type="checkbox"] + .check:before {
+  background: #b5b5b5;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check {
+  border-color: #00d1b2;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-white {
+  background: transparent;
+  border-color: #fff;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-white:before {
+  background: #fff;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-black {
+  background: transparent;
+  border-color: #0a0a0a;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-black:before {
+  background: #0a0a0a;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-light {
+  background: transparent;
+  border-color: #f5f5f5;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-light:before {
+  background: #f5f5f5;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-dark {
+  background: transparent;
+  border-color: #363636;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-dark:before {
+  background: #363636;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-primary {
+  background: transparent;
+  border-color: #00d1b2;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-primary:before {
+  background: #00d1b2;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-link {
+  background: transparent;
+  border-color: #3273dc;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-link:before {
+  background: #3273dc;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-info {
+  background: transparent;
+  border-color: #3298dc;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-info:before {
+  background: #3298dc;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-success {
+  background: transparent;
+  border-color: #48c774;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-success:before {
+  background: #48c774;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-warning {
+  background: transparent;
+  border-color: #ffdd57;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-warning:before {
+  background: #ffdd57;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-danger {
+  background: transparent;
+  border-color: #f14668;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check.is-danger:before {
+  background: #f14668;
+}
+.switch.is-outlined input[type="checkbox"]:checked + .check:before {
+  background: #00d1b2;
+}
+.switch.is-outlined:hover input[type="checkbox"] + .check {
+  background: transparent;
+  border-color: rgba(181, 181, 181, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check {
+  background: transparent;
+  border-color: rgba(0, 209, 178, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check.is-white {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check.is-black {
+  border-color: rgba(10, 10, 10, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check.is-light {
+  border-color: rgba(245, 245, 245, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check.is-dark {
+  border-color: rgba(54, 54, 54, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check.is-primary {
+  border-color: rgba(0, 209, 178, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check.is-link {
+  border-color: rgba(50, 115, 220, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check.is-info {
+  border-color: rgba(50, 152, 220, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check.is-success {
+  border-color: rgba(72, 199, 116, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check.is-warning {
+  border-color: rgba(255, 221, 87, 0.9);
+}
+.switch.is-outlined:hover input[type="checkbox"]:checked + .check.is-danger {
+  border-color: rgba(241, 70, 104, 0.9);
+}
+.switch.is-small {
+  border-radius: 2px;
+  font-size: 0.75rem;
+}
+.switch.is-medium {
+  font-size: 1.25rem;
+}
+.switch.is-large {
+  font-size: 1.5rem;
+}
+.switch[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #7a7a7a;
+}
+.upload {
+  position: relative;
+  display: inline-flex;
+}
+.upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  outline: none;
+  cursor: pointer;
+  z-index: -1;
+}
+.upload.is-expanded {
+  width: 100%;
+}
+.field.file.has-addons .button.is-static {
+  color: #242424;
+  background-color: #fff;
+  border-left: 0;
+}
+@media screen and (-ms-high-contrast: active),
+  screen and (-ms-high-contrast: none) {
+  .upload input[type="file"] {
+    z-index: auto;
+  }
+} /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.delete,
+.modal-close,
+.b-radio.radio,
+.b-checkbox.checkbox,
+.switch,
+.button,
+.file,
+.breadcrumb,
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis,
+.tabs,
+.is-unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.select:not(.is-multiple):not(.is-loading)::after,
+.navbar-link:not(.is-arrowless)::after {
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  border-right: 0;
+  border-top: 0;
+  content: " ";
+  display: block;
+  height: 0.625em;
+  margin-top: -0.4375em;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: rotate(-45deg);
+  transform-origin: center;
+  width: 0.625em;
+}
+.box:not(:last-child),
+.content:not(:last-child),
+.notification:not(:last-child),
+.progress:not(:last-child),
+.table:not(:last-child),
+.table-container:not(:last-child),
+.title:not(:last-child),
+.subtitle:not(:last-child),
+.block:not(:last-child),
+.highlight:not(:last-child),
+.breadcrumb:not(:last-child),
+.level:not(:last-child),
+.message:not(:last-child),
+.pagination:not(:last-child),
+.tabs:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.delete,
+.modal-close {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: rgba(10, 10, 10, 0.2);
+  border: none;
+  border-radius: 290486px;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 0;
+  height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: none;
+  position: relative;
+  vertical-align: top;
+  width: 20px;
+}
+.delete::before,
+.modal-close::before,
+.delete::after,
+.modal-close::after {
+  background-color: #fff;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform-origin: center center;
+}
+.delete::before,
+.modal-close::before {
+  height: 2px;
+  width: 50%;
+}
+.delete::after,
+.modal-close::after {
+  height: 50%;
+  width: 2px;
+}
+.delete:hover,
+.modal-close:hover,
+.delete:focus,
+.modal-close:focus {
+  background-color: rgba(10, 10, 10, 0.3);
+}
+.delete:active,
+.modal-close:active {
+  background-color: rgba(10, 10, 10, 0.4);
+}
+.is-small.delete,
+.is-small.modal-close {
+  height: 16px;
+  max-height: 16px;
+  max-width: 16px;
+  min-height: 16px;
+  min-width: 16px;
+  width: 16px;
+}
+.is-medium.delete,
+.is-medium.modal-close {
+  height: 24px;
+  max-height: 24px;
+  max-width: 24px;
+  min-height: 24px;
+  min-width: 24px;
+  width: 24px;
+}
+.is-large.delete,
+.is-large.modal-close {
+  height: 32px;
+  max-height: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  min-width: 32px;
+  width: 32px;
+}
+.button.is-loading::after,
+.loader,
+.select.is-loading::after,
+.control.is-loading::after {
+  animation: spinAround 500ms infinite linear;
+  border: 2px solid #dbdbdb;
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: relative;
+  width: 1em;
+}
+.image.is-square img,
+.image.is-square .has-ratio,
+.image.is-1by1 img,
+.image.is-1by1 .has-ratio,
+.image.is-5by4 img,
+.image.is-5by4 .has-ratio,
+.image.is-4by3 img,
+.image.is-4by3 .has-ratio,
+.image.is-3by2 img,
+.image.is-3by2 .has-ratio,
+.image.is-5by3 img,
+.image.is-5by3 .has-ratio,
+.image.is-16by9 img,
+.image.is-16by9 .has-ratio,
+.image.is-2by1 img,
+.image.is-2by1 .has-ratio,
+.image.is-3by1 img,
+.image.is-3by1 .has-ratio,
+.image.is-4by5 img,
+.image.is-4by5 .has-ratio,
+.image.is-3by4 img,
+.image.is-3by4 .has-ratio,
+.image.is-2by3 img,
+.image.is-2by3 .has-ratio,
+.image.is-3by5 img,
+.image.is-3by5 .has-ratio,
+.image.is-9by16 img,
+.image.is-9by16 .has-ratio,
+.image.is-1by2 img,
+.image.is-1by2 .has-ratio,
+.image.is-1by3 img,
+.image.is-1by3 .has-ratio,
+.modal,
+.modal-background,
+.is-overlay,
+.hero-video {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.button,
+.input,
+.textarea,
+.select select,
+.file-cta,
+.file-name,
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  position: relative;
+  vertical-align: top;
+}
+.button:focus,
+.input:focus,
+.textarea:focus,
+.select select:focus,
+.file-cta:focus,
+.file-name:focus,
+.pagination-previous:focus,
+.pagination-next:focus,
+.pagination-link:focus,
+.pagination-ellipsis:focus,
+.is-focused.button,
+.is-focused.input,
+.is-focused.textarea,
+.select select.is-focused,
+.is-focused.file-cta,
+.is-focused.file-name,
+.is-focused.pagination-previous,
+.is-focused.pagination-next,
+.is-focused.pagination-link,
+.is-focused.pagination-ellipsis,
+.button:active,
+.input:active,
+.textarea:active,
+.select select:active,
+.file-cta:active,
+.file-name:active,
+.pagination-previous:active,
+.pagination-next:active,
+.pagination-link:active,
+.pagination-ellipsis:active,
+.is-active.button,
+.is-active.input,
+.is-active.textarea,
+.select select.is-active,
+.is-active.file-cta,
+.is-active.file-name,
+.is-active.pagination-previous,
+.is-active.pagination-next,
+.is-active.pagination-link,
+.is-active.pagination-ellipsis {
+  outline: none;
+}
+.notification {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  position: relative;
+  padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+}
+.notification a:not(.button):not(.dropdown-item) {
+  color: currentColor;
+  text-decoration: underline;
+}
+.notification strong {
+  color: currentColor;
+}
+.notification code,
+.notification pre {
+  background: #fff;
+}
+.notification pre code {
+  background: transparent;
+}
+.notification > .delete {
+  right: 0.5rem;
+  position: absolute;
+  top: 0.5rem;
+}
+.notification .title,
+.notification .subtitle,
+.notification .content {
+  color: currentColor;
+}
+.notification.is-white {
+  background-color: #fff;
+  color: #0a0a0a;
+}
+.notification.is-black {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+.notification.is-light {
+  background-color: #f5f5f5;
+  color: rgba(0, 0, 0, 0.7);
+}
+.notification.is-dark {
+  background-color: #363636;
+  color: #fff;
+}
+.notification.is-primary {
+  background-color: #00d1b2;
+  color: #fff;
+}
+.notification.is-primary.is-light {
+  background-color: #ebfffc;
+  color: #00947e;
+}
+.notification.is-link {
+  background-color: #3273dc;
+  color: #fff;
+}
+.notification.is-link.is-light {
+  background-color: #eef3fc;
+  color: #2160c4;
+}
+.notification.is-info {
+  background-color: #3298dc;
+  color: #fff;
+}
+.notification.is-info.is-light {
+  background-color: #eef6fc;
+  color: #1d72aa;
+}
+.notification.is-success {
+  background-color: #48c774;
+  color: #fff;
+}
+.notification.is-success.is-light {
+  background-color: #effaf3;
+  color: #257942;
+}
+.notification.is-warning {
+  background-color: #ffdd57;
+  color: rgba(0, 0, 0, 0.7);
+}
+.notification.is-warning.is-light {
+  background-color: #fffbeb;
+  color: #947600;
+}
+.notification.is-danger {
+  background-color: #f14668;
+  color: #fff;
+}
+.notification.is-danger.is-light {
+  background-color: #feecf0;
+  color: #cc0f35;
+}
+.button[disabled],
+.input[disabled],
+.textarea[disabled],
+.select select[disabled],
+.file-cta[disabled],
+.file-name[disabled],
+.pagination-previous[disabled],
+.pagination-next[disabled],
+.pagination-link[disabled],
+.pagination-ellipsis[disabled],
+fieldset[disabled] .button,
+fieldset[disabled] .input,
+fieldset[disabled] .textarea,
+fieldset[disabled] .select select,
+.select fieldset[disabled] select,
+fieldset[disabled] .file-cta,
+fieldset[disabled] .file-name,
+fieldset[disabled] .pagination-previous,
+fieldset[disabled] .pagination-next,
+fieldset[disabled] .pagination-link,
+fieldset[disabled] .pagination-ellipsis {
+  cursor: not-allowed;
+} /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */

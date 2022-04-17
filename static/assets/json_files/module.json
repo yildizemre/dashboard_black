@@ -1,0 +1,39 @@
+{
+    "hype_module_list": "Super hero squad",
+    "activity": "Factory",
+    "design_date": 2020,
+    "secret_key": "coKhjsPmTtSejyHqOjo64grxzgBnQzJd",
+    "active": true,
+    "module_list": [
+      {
+        "name": "Equipment Control",
+        "fps_count": 9,
+        
+        "powers": [
+          "Baret",
+          "Yelek"
+          
+        ]
+      },
+      {
+        "name": "Area Violation",
+        "fps_count": 9,
+        
+        "powers": [
+          "Million tonne punch"
+          
+        ]
+      },
+      {
+        "name": "Fire Detection",
+        "fps_count": 9,
+        
+        "powers": [
+          "Unknown"
+        
+        ]
+      }
+    ]
+  }
+
+  
