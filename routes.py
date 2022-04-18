@@ -14,8 +14,7 @@ import numpy as np
 # from redis.commands.json.path import Path
 from pathlib import Path
 from dotenv import load_dotenv
-import os
-
+import os   
 from flask.wrappers import Response
 from flask_apscheduler import APScheduler
 
@@ -66,11 +65,6 @@ def admin_required(f):
             return render_template("./index.html")
 
     return decorated_function
-
-
-
-
-
 
 
 @app.route('/api/file', methods=['POST'])

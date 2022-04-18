@@ -1,0 +1,10 @@
+pandas
+opencv-python
+opencv-contrib-python
+Flask-APScheduler
+mysql-connector-python
+Flask
+python-dotenv
+gunicorn
+itsdangerous==2.0.1
+gevent
